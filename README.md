@@ -1,3 +1,3 @@
 # Html Project
 ## College HTML Project.
-HTML static web page created using HTML, CSS and js.
+HTML static tourism website UI created using HTML, CSS and js.
