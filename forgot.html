@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot</title>
+    <link rel="icon" href="images/icon.png" type="icon">
+    <style>
+        body{
+            background-image: url(images/index-background.jpg);
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-attachment: fixed;
+            background-position-y: 110ch;
+            background-position-x: center;
+        }
+        #div1{
+            margin-top: 5ch;
+            background-image: url(images/index-login.jpg);
+            background-position: bottom;
+            padding: 0ch;
+            border-radius: 1.5ch;
+            text-align: center;
+            width: 50ch;
+            height: 60ch;
+            position: absolute;
+            left: 35%;
+        }
+        #div2{
+            background-image: url(images/index-background.jpg);
+            height: 4ch;
+            border-radius: .8ch;
+            font-size: 2ch;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 100%;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            display: inline;
+            font-size:large;
+        }
+        #img2{
+            width: 35px;
+            height: 35px;
+            float: right;
+            border-radius: 50%;
+            padding-right:1ch;
+            padding-left: 1ch;
+            padding-top: 1mm;
+            border: 0px;
+            margin: 0%;
+        }
+        .position{
+            position: absolute;
+            left: 48%;
+            margin-top: 3px;
+        }
+        img{
+            height: 10ch;
+            padding: 1ch;
+            border: 4px solid purple;
+            border-radius: 50%;
+            margin-top: 2ch;
+        }
+        a{
+            text-decoration:none;
+            font-size: medium;
+            font-weight: bolder;
+            color: moccasin;
+            font-style: oblique;
+        }
+        p{
+            color: olivedrab;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            letter-spacing: 1mm;
+            padding: 0ch;
+            margin: 0.5ch;
+        }
+        input{
+            height: 4ch;
+            width: 30ch;
+            background-image: url(images/index-login.jpg);
+            background-position: top;
+            color: darksalmon;
+            text-align: center;
+            margin: 1ch;
+        }
+        ::placeholder{
+            text-align: center;
+            color: blanchedalmond;
+            opacity:0.5;
+        }
+        .op{
+            background-image: url(images/index-login.jpg);
+            background-position: center;
+            height: fit-content;
+            width: 15ch;
+            padding: 1.5ch;
+            border-radius: 0.8ch;
+            color: antiquewhite;
+            font-weight: bold;
+        }
+        option{
+            background-color: purple;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <img src="images/login.png" alt="Login-icon">
+        <br>
+        <form action="password.html" autocomplete="on">
+            <input type="text" placeholder="Registered Name" required autofocus>
+            <input type="email" placeholder="Registered Mail-Id (@example.com)" required>
+            <p>Registered Number</p>
+            <select class="op">
+                <option selected>India (+91)</option>
+                <option>America (+1)</option>
+                <option>Switzerland	(41)</option>
+                <option>Canada	(1)</option>
+                <option>France	(+33)</option>
+                <option>Germany	(+49)</option>
+                <option>Japan (+81)</option>
+                <option>Mexico (+52)</option>
+                <option>United Kingdom (+44)</option>
+                <option>United Arab Emirates (+971)</option>
+            </select>
+            <input type="tel" style="text-align: left;" minlength="10" maxlength="10" placeholder="Number With Your Country Code">
+            <input type="text" placeholder="OTP (Minimum 6 digits)" required minlength="6" maxlength="6">
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+    <br>
+    <div id="div2"><b class="position">&#169;DESTINY</b>
+        <ul>
+            <li>
+            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook" id="img2"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com"><img src="images/instagram.jpg" alt="instagram" id="img2"></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter" id="img2"></a>
+                <li>
+                    <a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="linkedin" id="img2"></a>
+                </li>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

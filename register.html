@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="icon" href="images/icon.png" type="icon">
+    <style>
+        body{
+            background-image: url(images/index-background.jpg);
+            background-attachment: fixed;
+            background-position-y: 115ch;
+            background-position-x: center;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #div1{
+            margin-top: 5ch;
+            background-image: url(images/index-login.jpg);
+            background-position: center;
+            padding: 2ch;
+            border-radius: 1.5ch;
+            text-align: center;
+            width: 65ch;
+            height: fit-content;
+            position: absolute;
+            left: 35%;
+        }
+        img{
+            height: 8ch;
+            padding: 1ch;
+            margin: 3ch;
+        }
+        #pic{
+            height: 6ch;
+            width: 25ch;
+            border: none;
+            border-radius: 1ch;
+            margin: 0ch;
+        }
+        input{
+            border-radius: 1ch;
+            height: 5ch;
+            width: 30ch;
+            background-image: url(images/index-login.jpg);
+            background-position: center;
+            color:rgb(240,189, 145) ;
+            margin-top: 1ch;
+            text-align: center;
+            margin-right: 2ch;
+        }
+        ::placeholder{
+            text-align: center;
+            color: moccasin;
+            opacity: 0.5;
+        }
+        #div2{
+            background-image: url(images/index-background.jpg);
+            height: 4ch;
+            border-radius: .8ch;
+            font-size: 2ch;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 125%;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            display: inline;
+            font-size:large;
+        }
+        #img2{
+            width: 35px;
+            height: 35px;
+            float: right;
+            border-radius: 50%;
+            padding-right:1ch;
+            padding-left: 1ch;
+            padding-top: 1mm;
+            border: none;
+            margin: 0%;
+        }
+        .position{
+            position: absolute;
+            left: 48%;
+            margin-top: 3px;
+        }
+        h2{
+            margin: 0.5ch;
+            color: burlywood;
+        }
+        .p{
+            color: cornsilk;
+            font-size:4mm;
+            margin: 0ch;
+            margin-bottom: 1ch;
+        }
+        .gen{
+            background-image: url(images/index-login.jpg);
+            color: cornsilk;
+            border: 3px solid;
+            background-position: center;
+            width: 10ch;
+            border-radius: .5ch;
+            width: fit-content;
+            text-align: center;
+            margin: 1ch;
+            padding: 1ch;
+            padding-right: 5ch;
+            position: relative;
+            left: 37%;
+        }
+        .op{
+            background-image: url(images/index-login.jpg);
+            background-position: center;
+            height: fit-content;
+            width: 15ch;
+            padding: 1.5ch;
+            border-radius: 0.8ch;
+            color: antiquewhite;
+            font-weight: bold;
+        }
+        option{
+            background-color: purple;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <h2>SIGNUP</h2>
+        <form action="redirect.html" autocomplete="on">
+            <img src="images/login.png" alt="login-icon">
+        <h2>Name</h2>
+            <input type="text" placeholder="First Name." required autofocus><input type="text" placeholder="Last Name">
+        <h2>Password</h2>
+            <input type="password" placeholder="Password (Min. 8 Digits)" minlength="8" required> <input type="password" placeholder="Re-Type Password" required minlength="8">
+            <h2>E-Mail Id</h2>
+            <input type="email" required placeholder="e-mail (abc@example.com)"><input type="email" required placeholder="Verify (abc@example.com)">
+            <h2>Date Of Birth</h2>
+            <input type="date" required>
+            <br><br>
+            <h2>Gender</h2>
+            <div class="gen">
+                <p class="p">
+                    Male<input type="radio" class="gen">
+                    <br> 
+                    Female<input type="radio" class="gen">
+                    <br> 
+                    Others<input type="radio" class="gen">
+                </p>
+            </div>
+            <h2>Mobile Number</h2>
+            <select class="op">
+                <option selected>India (+91)</option>
+                <option>America (+1)</option>
+                <option>Switzerland	(41)</option>
+                <option>Canada	(1)</option>
+                <option>France	(+33)</option>
+                <option>Germany	(+49)</option>
+                <option>Japan (+81)</option>
+                <option>Mexico (+52)</option>
+                <option>United Kingdom (+44)</option>
+                <option>United Arab Emirates (+971)</option>
+            </select>
+            <input type="tel" style="text-align: left;" minlength="10" maxlength="10" placeholder="Contact Number">
+        <h2>Verify With OTP</h2>
+        <input type="text" placeholder="OTP (Minimum 6 digits)" minlength="6" maxlength="6" required>
+            <h2>CAPCHA</h2>
+            <img src="images/capcha.png" alt="Capcha-image" id="pic">
+            <br>
+            <input type="text" placeholder="Capcha" minlength="8" maxlength="8" required>
+        <br><br>
+            <input type="submit" value="SignUp">
+        </form>
+    </div>
+    <br>
+    <div id="div2"><b class="position">&#169;DESTINY</b>
+        <ul>
+            <li>
+            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook" id="img2"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com"><img src="images/instagram.jpg" alt="instagram" id="img2"></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter" id="img2"></a>
+                <li>
+                    <a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="linkedin" id="img2"></a>
+                </li>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

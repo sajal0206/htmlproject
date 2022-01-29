@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <style>
+        body{
+            background-image: url(images/index-background.jpg);
+            background-position-y: 110ch;
+            background-position-x: center;
+            background-attachment: fixed;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .header{
+            background-image: url(images/contact.jpg);
+            width: 100%;
+            border-bottom-left-radius: 2ch;
+            border-bottom-right-radius: 2ch;
+            background-position: center;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0%;
+            margin-bottom: 8mm;
+            width: auto;
+            height: 395px;
+        }
+        .top{
+            margin: 0%;
+            font-family: cursive;
+            font-style: italic;
+            font-size: large;
+        }
+        a{
+            text-decoration: none;
+            padding:3ch;
+            color: snow;
+        }
+        .text1{
+            font-family: cursive;
+            font-style: italic;
+            margin-top:0mm;
+            position: relative;
+            top: 40%;
+            color: whitesmoke;
+        }
+        ul{
+            list-style-type: none;
+            display: inline;
+        }
+        li{
+            display: inline;
+            font-size:larger;
+        }
+        #img{
+            float: right;
+            width: 50px;
+            height: 43px;
+            margin-top: 0ch;
+            margin-right: .1ch;
+        }
+        #div1{
+            border: none;
+            background-image: url(images/index-background.jpg);
+            width: 100%;
+            height: 4ch;
+            border-top-left-radius: .8ch;
+            border-top-right-radius: .8ch;
+        }
+        #div2{
+            background-image: url(images/index-background.jpg);
+            height: 4ch;
+            width: 100%;
+            border-bottom-left-radius: .8ch;
+            border-bottom-right-radius: .8ch;
+            font-size: 2ch;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .position{
+            position: absolute;
+            left: 48%;
+            margin-top: 3px;
+        }
+        button{
+            vertical-align: middle;
+            font-size: larger;
+            font-weight: bold;
+            color: black;
+            height: 45px;
+            width: max-content;
+            margin: 1mm;
+            background-color:slategrey;
+            border: 4px ridge black;
+        }
+        .posi{
+            position: relative;
+            top: 10ch;
+        }
+        footer{
+            background-image: url(images/redirect-footer-background4.jpg);
+            width: 100%;
+            background-repeat: no-repeat;
+            margin-top: 9mm;
+            height: 56ch;
+            background-position: top;
+            border-top-left-radius: 2ch;
+            border-top-right-radius: 2ch;
+            text-align: center;
+        }
+        #img2{
+            width: 35px;
+            height: 35px;
+            float: right;
+            border-radius: 50%;
+            padding-right:1ch;
+            padding-left: 1ch;
+        }
+        td{
+            text-align: center;
+            font-size: large;
+            color: snow;
+            border: 5px solid;
+            padding: 3ch;
+            margin: 5%;
+            border-radius: .8ch;
+            font-weight: bolder;
+            padding: 1ch;
+            width: 30ch;
+            height: 30ch;
+            top: auto;
+            background-image: url(images/index-background.jpg);
+            background-position: top;
+        }
+        #div3{
+            background-image: url(images/contact-back.jpg);
+            background-position: bottom;
+            border-radius: 2ch;
+            width: 100%;
+            height: fit-content;
+            padding:0.003mm;
+            margin: 0%;
+            text-align: center;
+        }
+        #img3{
+            border-radius: 2ch;
+            text-align: center;
+            width: 96%;
+        }
+        #select{
+            height: 2ch;
+            margin: 3mm;
+            font-style: italic;
+            text-align: center;
+            font-family: cursive;
+            background-image: url(images/index-background.jpg);
+            background-color: blueviolet;
+            background-position: top;
+            border: none;
+            font-size: x-large;
+            color: snow;
+            font-weight:normal;
+        }
+        .select2{
+            background-image: url(images/index-background.jpg);
+            background-position: top;
+            border: none;
+            border-radius: 1%;
+            width: fit-content;
+            color: snow;
+            font-size: small;
+            font-weight: bold;
+            background-color: blueviolet;
+            margin-top: 5mm;
+        }
+        option{
+         font-size: medium;
+        }
+        input{
+            opacity: 0.7;
+            background-color: rgb(111, 113, 116);
+            border: none;
+            border-bottom: solid 3px black;
+            height: 2.5ch;
+            width: 70%;
+            font-weight:900;
+            font-size: medium;
+        }
+        ::placeholder{
+            color: snow;
+        }
+        marquee{
+            background-image: url(images/index-background.jpg);
+            font-size: medium;
+            padding: 2mm;
+            font-weight: bolder;
+            margin-top: 15ch;
+        }
+        .design:hover{
+            color:yellowgreen;
+            border-radius: 2ch;
+            height:fit-content;
+        }
+        #select:hover{
+            color:yellowgreen;
+            border-radius: 2ch;
+            height:fit-content;
+        }
+        #img:hover{
+            color:yellowgreen;
+            border-radius: 1ch;
+        }
+        #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 1;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-bottom: 5ch;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+    </style>
+</head>
+<body>
+    <header class="top">
+        <div id="div1">
+        <ul>
+        <li>
+            <a href="logged.html"><img src="images/login.png" alt="login-image" id="img"></a>
+            <select onchange="location=this.value" class="select2" id="img">
+                <option selected value="logged.html">User</option>
+            <option value="index.html">Logout</option>
+            </select>
+        </li>
+        <li style="float: left;font-size: xx-large;font-style: normal;font-family: Arial, Helvetica, sans-serif;font-weight: bolder;">DESTINY</li>
+        <li><a href="about.html" class="design">About</a></li>
+        <li><a href="home.html" class="design">Home</a></li>
+        <li><a href="contact.html" class="design">Contact</a></li>
+        <li>
+            <select onchange="location=this.value;" id="select">
+                <option selected value="#">Top Destinations</option>
+                <option value="india.html">India</option>
+                <option value="mexico.html">Mexico</option>
+                <option value="canada.html">Canada</option>
+                <option value="america.html">United States</option>
+                <option value="california.html">California</option>
+                <option value="egypt.html">Egypt</option>
+                <option value="switzerland.html">Switzerland</option>
+                <option value="france.html">France</option>
+                <option value="dubai.html">Dubai</option>
+                <option value="germany.html">Germany</option>
+                <option value="japan.html">Japan</option>
+                <option value="london.html">London</option>
+            </select>
+        </li>
+    </ul>
+    </div>
+    </header>
+    <header class="header">
+        <h1 class="text1"class="posi">Contact Us</h1>
+        <marquee behavior="scroll" direction="left" class="posi"><a href="tel:+913344556677" class="text1"> Contact Number - [ (+91) 334 455 6677 ]</a><a href="mailto:customes-support@destiny.co.in" class="text1"> E-Mail Id - [ customer-support@destiny.co.in ]</a></marquee>
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/top.png" alt="top_icon" id="img"></button>
+<script>
+var mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    <div id="div3" style="margin-bottom: 8mm;">
+        <H1 style="font-weight: bolder;font-size: xxx-large;margin-bottom: 1mm;">Any Feedback</H1>
+        <form action="feedback.html">
+            <h1 style="float: left;margin-left: 3ch;color: cornsilk;">Name - <input type="text"placeholder="NAME"></h1>
+            <h1 style="float: right;margin-right: 3ch;color: cornsilk;">E-Mail - <input type="email" placeholder="abc@example.com"></h1><br>
+            <h1 style="margin: 5ch;color: cornsilk;">Suggessation <br><textarea cols="30" rows="5" placeholder="Any suggessation" style="text-align:center;background: rgb(111, 113, 116);opacity: 0.7;border: black solid 3px;"></textarea></h1>
+            <button type="submit">Submit Feedback !</button>
+        </form>
+    </div>
+    <div id="div3" style="margin-top: 8mm;">
+        <H1 style="font-weight: bolder;font-size: xxx-large;margin-bottom: 1mm;">Query</H1>
+        <form action="query.html">
+            <h1 style="float: left;margin-left: 3ch;color: cornsilk;">Name - <input type="text"placeholder="NAME"></h1>
+            <h1 style="float: right;margin-right: 3ch;color: cornsilk;">E-Mail - <input type="email" placeholder="abc@example.com"></h1>
+            <br>
+            <h1 style="margin: 5ch;color: cornsilk;margin-bottom: 0mm;">Topic For Query <br><input type="text" placeholder="Topic"></h1>
+            <br>
+            <h1 style="margin-top: 1mm;color: cornsilk;">Query <br><textarea cols="30" rows="5" placeholder="Any suggessation" style="text-align:center;background: rgb(111, 113, 116);opacity: 0.7;border: black solid 3px;"></textarea></h1>
+            <button type="submit">Submit Query !</button>
+        </form>
+    </div>
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <h2>Designer<br><u>Ishita Sharma</u></h2>
+                    Enrollment No.- <br>
+                    19100BTCSES05376
+                    <br>
+                    B-Tech in Computer Science Engineering<br> with Specialisation of RedHat Enterprise System.<br><a href="mailto:Ishita@destiny.co.in" style="color: red;">Ishita@destiny.co.in</a>
+                </td>
+                <td>
+                    <h2>Developer<br><u>Sajal Chandaiya</u></h2>
+                    Enrollment No.- <br>
+                    19100BTCSES05392
+                    <br>
+                    B-Tech in Computer Science Engineering <br> with Specialisation of RedHat Enterprise System.<br><a href="mailto:sajal@destiny.co.in" style="color: red;">Sajal@destiny.co.in</a>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <div id="div2"><b class="position">&#169;DESTINY</b>
+        <ul>
+            <li>
+            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook" id="img2"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com"><img src="images/instagram.jpg" alt="instagram" id="img2"></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter" id="img2"></a>
+                <li>
+                    <a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="linkedin" id="img2"></a>
+                </li>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

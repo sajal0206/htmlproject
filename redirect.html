@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESTINY</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <style>
+        body{
+            background-image: url(images/index-background.jpg);
+            background-attachment: fixed;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .header{
+            background-image: url(images/header2.jpg);
+            width: 100%;
+            border-bottom-left-radius: 2ch;
+            border-bottom-right-radius: 2ch;
+            background-position: center;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0%;
+            width: auto;
+            height: 50ch;
+        }
+        .top{
+            margin: 0%;
+            font-family: cursive;
+            font-style: italic;
+            font-size: large;
+        }
+        a{
+            text-decoration: none;
+            padding:3ch;
+            color: snow;
+        }
+        .design:hover{
+            color:yellowgreen;
+            border-radius: 2ch;
+            height:fit-content;
+        }
+        .text1{
+            font-family: cursive;
+            font-style: italic;
+            margin-top:1mm;
+            position: relative;
+            top: 2ch;
+            color: rgb(245, 245, 224);
+        }
+        .text2{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+            margin-top:0ch;
+            position: relative;
+            top: 3ch;
+            font-size:large;
+            font-weight: bold;
+            color: rgb(245, 245, 224);
+            text-decoration:wheat underline;
+        }
+        ul{
+            list-style-type: none;
+            display: inline;
+        }
+        li{
+            display: inline;
+            font-size:larger;
+        }
+        #img{
+            float: right;
+            width: 50px;
+            height: 43px;
+            margin-top: 0ch;
+            margin-right: 0mm;
+            margin-right: .1ch;
+        }
+        #div1{
+            border: none;
+            background-image: url(images/index-background.jpg);
+            width: 100%;
+            height: 4ch;
+            border-top-left-radius: .8ch;
+            border-top-right-radius: .8ch;
+        }
+        #div2{
+            background-image: url(images/index-background.jpg);
+            height: 4ch;
+            width: 100%;
+            border-bottom-left-radius: .8ch;
+            border-bottom-right-radius: .8ch;
+            font-size: 2ch;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .position{
+            position: absolute;
+            left: 48%;
+            margin-top: 3px;
+        }
+        button{
+            vertical-align: middle;
+            font-size: larger;
+            font-weight: bold;
+            color: black;
+            height: 45px;
+            width: max-content;
+            background-color:deepskyblue;
+            border: 4px ridge black;
+        }
+        button:hover{
+            color: chartreuse;
+            border: chartreuse solid;
+        }
+        .posi{
+            position: relative;
+            top:15ch;
+        }
+        footer{
+            background-image: url(images/redirect-footer-background4.jpg);
+            width: fit-content;
+            background-repeat: no-repeat;
+            height: fit-content;
+            background-position: top;
+            border-top-left-radius: 2ch;
+            border-top-right-radius: 2ch;
+            text-align: center;
+            padding: 2%;
+        }
+        #img2{
+            width: 35px;
+            height: 35px;
+            float: right;
+            border-radius: 50%;
+            padding-right:1ch;
+            padding-left: 1ch;
+        }
+        td{
+            text-align: center;
+            font-size: large;
+            color: whitesmoke;
+            border: 5px solid;
+            padding: 1%;
+            position: relative;
+            border-radius: .8ch;
+            font-weight: bolder;
+            width: 18%;
+            height: 25ch;
+            background-image: url(images/index-background.jpg);
+            background-position: top;
+        }
+        #div3{
+            border-radius: 2ch;
+            height: fit-content;
+            width: 97%;
+            margin: 3ch;
+            margin-left: 0%;
+        }
+        #img3{
+            border-radius: 2ch;
+            text-align: center;
+            width: 100%;
+            margin-left: 0mm;
+            height: 40ch;
+        }
+        #select{
+            height: 2ch;
+            margin: 3mm;
+            font-style: italic;
+            text-align: center;
+            font-family: cursive;
+            background-image: url(images/index-background.jpg);
+            background-color: blueviolet;
+            background-position: top;
+            border: none;
+            font-size: x-large;
+            color: snow;
+            font-weight:normal;
+        }
+        #select:hover{
+            color:yellowgreen;
+            border-radius: 2ch;
+            height:fit-content;
+        }
+        #img:hover{
+            color:yellowgreen;
+            border-radius: 1ch;
+        }
+        .select2{
+            background-image: url(images/index-background.jpg);
+            background-position: top;
+            border: none;
+            border-radius: 1%;
+            width: fit-content;
+            color: snow;
+            font-size: small;
+            font-weight: bold;
+            background-color: blueviolet;
+            margin-top: 5mm;
+        }
+        option{
+         font-size: medium;
+        }
+        #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 1;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-bottom: 5ch;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+    </style>
+</head>
+<body>
+    <header class="top">
+        <div id="div1">
+        <ul>
+        <li>
+            <a href="logged.html"><img src="images/login.png" alt="login-image" id="img"></a>
+            <select onchange="location=this.value" class="select2" id="img">
+                <option selected value="logged.html">User</option>
+            <option value="index.html">Logout</option>
+            </select>
+        </li>
+        <li style="float: left;font-size: xx-large;font-style: normal;font-family: Arial, Helvetica, sans-serif;font-weight: bolder;">DESTINY</li>
+        <li><a href="about.html" class="design">About</a></li>
+        <li><a href="home.html" class="design">Home</a></li>
+        <li><a href="contact.html" class="design">Contact</a></li>
+        <li>
+            <select onchange="location=this.value;" id="select">
+                <option selected value="#">Top Destinations</option>
+                <option value="india.html">India</option>
+                <option value="mexico.html">Mexico</option>
+                <option value="canada.html">Canada</option>
+                <option value="america.html">United States</option>
+                <option value="california.html">California</option>
+                <option value="egypt.html">Egypt</option>
+                <option value="switzerland.html">Switzerland</option>
+                <option value="france.html">France</option>
+                <option value="dubai.html">Dubai</option>
+                <option value="germany.html">Germany</option>
+                <option value="japan.html">Japan</option>
+                <option value="london.html">London</option>
+            </select>
+        </li>
+    </ul>
+    </div>
+    </header>
+    <header class="header">
+        <h1 class="text1"class="posi">World Away From Your One Click</h1>
+        <p class="text2">Love the nature Get inspired And protect our Earth</p>
+        <form action="booking.html">
+        <button type="submit" class="posi">Book Now !</button>
+        </form>
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/top.png" alt="top_icon" id="img"></button>
+    <script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <div id="div3">
+        <a href="wonders-booking.html"><img src="images/places/8 wonders.png" alt="8-wonders-img" id="img3"></a>
+    </div>
+    <div id="div3">
+        <a href="4-dham-booking.html"><img src="images/places/4 dham.jpeg" alt="4-dhamyatra-img" id="img3"></a>
+    </div>
+    <div id="div3">
+        <a href="4-dham-booking(uttrakhand).html"><img src="images/places/4 dham(uttrakhand).jpeg" alt="4-dhamyatra-img" id="img3"></a>
+    </div>
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <h2>Designer<br><u>Ishita Sharma</u></h2>
+                    Enrollment No.- <br>
+                    19100BTCSES05376
+                    <br>
+                    B-Tech in Computer Science Engineering<br> with Specialisation of RedHat Enterprise System.<br><a href="mailto:Ishita@destiny.co.in" style="color: red;">Ishita@destiny.co.in</a>
+                </td>
+                <td>
+                    <h2>Developer<br><u>Sajal Chandaiya</u></h2>
+                    Enrollment No.- <br>
+                    19100BTCSES05392
+                    <br>
+                    B-Tech in Computer Science Engineering <br> with Specialisation of RedHat Enterprise System.<br><a href="mailto:sajal@destiny.co.in" style="color: red;">Sajal@destiny.co.in</a>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <div id="div2"><b class="position">&#169;DESTINY</b>
+        <ul>
+            <li>
+            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook" id="img2"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com"><img src="images/instagram.jpg" alt="instagram" id="img2"></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter" id="img2"></a>
+                <li>
+                    <a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="linkedin" id="img2"></a>
+                </li>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

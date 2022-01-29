@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Failed</title>
+    <link rel="icon" href="images/icon.png" type="icon">
+    <style>
+        body{
+            background-image: url(images/redirect-background4.jpg);
+            background-attachment: fixed;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #div1{
+            border: none;
+            background-image: url(images/index-background.jpg);
+            width: 100%;
+            height: 2ch;
+            border-top-left-radius: .8ch;
+            border-top-right-radius: .8ch;
+        }
+        #select{
+            height: 2ch;
+            font-style: italic;
+            text-align: center;
+            font-family: cursive;
+            background-image: url(images/index-background.jpg);
+            background-color: blueviolet;
+            background-position: top;
+            border: none;
+            font-size: xx-large;
+            color: snow;
+            font: weight 589.9;
+        }
+        a{
+            text-decoration: none;
+            padding:3ch;
+            color: snow;
+        }
+        #div2{
+            background-image: url(images/index-background.jpg);
+            height: 4ch;
+            border-radius: .8ch;
+            font-size: 2ch;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top:59ch;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            display: inline;
+            font-size:large;
+            font-family: cursive;
+            font-style: italic;
+        }
+        #img{
+            float: right;
+            width: 50px;
+            height: 43px;
+            margin-top: 0mm;
+            margin-right: 0mm;
+            font-weight: bold;
+            margin-right: .1ch;
+        }
+        .img1{
+            height: 40ch;
+            width: 100%;
+            border-bottom-left-radius: 2ch;
+            border-bottom-right-radius: 2ch;
+            top: 7ch;
+            margin: 0ch;
+        }
+        #img2{
+            width: 35px;
+            height: 35px;
+            float: right;
+            border-radius: 50%;
+            padding-right:1ch;
+            padding-left: 1ch;
+            padding-top: 1mm;
+            border: none;
+            margin: 0%;
+        }
+        #select{
+            height: 2ch;
+            margin: 3mm;
+            width: 15ch;
+            font-style: italic;
+            text-align: center;
+            font-family: cursive;
+            background-image: url(images/index-background.jpg);
+            background-color: blueviolet;
+            background-position: top;
+            border: none;
+            font-size: large;
+            color: snow;
+            font-weight: normal;
+        }
+        .select2{
+            background-image: url(images/index-background.jpg);
+            background-position: top;
+            border: none;
+            border-radius: 1%;
+            width: fit-content;
+            color: snow;
+            font-size: small;
+            background-color: blueviolet;
+            margin-top: 5mm;
+        }
+        option{
+            background-color: blueviolet;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-style: normal;
+            font-weight: lighter;
+            font-size: medium;
+            text-align: center;
+            color: snow;
+            font-weight: bold;
+        }
+        .position{
+            position: absolute;
+            left: 48%;
+            margin-top: 3px;
+        }
+        #con{
+            background-image: url(images/index-login.jpg);
+            height: fir fit-content;
+            border-radius: 50%;
+            width: 35ch;
+            left: 26.5%;
+            padding: 5ch;
+            margin: 5ch;
+            position: absolute;
+            background-position: center;
+            text-align: center;
+            color: yellow;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .design:hover{
+            color:yellowgreen;
+            border-radius: 2ch;
+            height:fit-content;
+        }
+        #select:hover{
+            color:yellowgreen;
+            border-radius: 2ch;
+            height:fit-content;
+        }
+        #img:hover{
+            color:yellowgreen;
+            border-radius: 1ch;
+        }
+        #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 1;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-bottom: 5ch;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+    </style>
+</head>
+<body>
+    <div id="div1">
+    <ul>
+    <li>
+        <a href="logged.html"><img src="images/login.png" alt="login-image" id="img"></a>
+        <select onchange="location=this.value" class="select2" id="img">
+            <option selected value="logged.html">User</option>
+        <option value="index.html">Logout</option>
+        </select>
+    </li>
+    <li style="float: left;font-size: xx-large;font-style: normal;font-family: Arial, Helvetica, sans-serif;font-weight: bolder;">DESTINY</li>
+    <li><a href="about.html" class="design">About</a></li>
+    <li><a href="home.html" class="design">Home</a></li>
+    <li>
+        <select id="select" style="width: 10ch;" onchange="location=this.value">
+            <option value="#">
+                Help Line
+            </option>
+            <option value="mailto:customer-support@destiny.co.in">
+             For Mailing (customer-support@destiny.co.in)
+            </option>
+            <option value="tel:+913344556677">
+                For Calling ( +91 334 455 6677)
+            </option>
+        </select>
+    </li>
+    <li>
+        <select onchange="location=this.value;" id="select">
+            <option selected value="#">Top Destinations</option>
+            <option value="india.html">India</option>
+            <option value="mexico.html">Mexico</option>
+            <option value="canada.html">Canada</option>
+            <option value="america.html">United States</option>
+            <option value="california.html">California</option>
+            <option value="egypt.html">Egypt</option>
+            <option value="switzerland.html">Switzerland</option>
+            <option value="france.html">France</option>
+            <option value="dubai.html">Dubai</option>
+            <option value="germany.html">Germany</option>
+            <option value="japan.html">Japan</option>
+            <option value="london.html">London</option>
+        </select>
+    </li>
+</ul>
+</div>
+    <img src="images/train2.jpg" alt="Train-image" class="img1">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/top.png" alt="top_icon" id="img"></button>
+    <script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <div id="con">
+        !! SORRY !!
+        <p>
+        <b style="color: whitesmoke;">Your Booking has been Failed with a Error code <br>
+            <b style="color:papayawhip;font-weight:bolder;">#ERR5702</b><br>
+        There is no possible train service between the selected locations. You may try<a href="flight.html" style="color: blue;padding: 2mm;">flights</a>for the selected Locations.
+        </b>
+        <br>
+        Have a nice day.
+    </p>
+    </div>
+    <div id="div2"><b class="position">&#169;DESTINY</b>
+        <ul>
+            <li>
+            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook" id="img2"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com"><img src="images/instagram.jpg" alt="instagram" id="img2"></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter" id="img2"></a>
+                <li>
+                    <a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="linkedin" id="img2"></a>
+                </li>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
